@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from "lucide-react";
+import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Scissors, Flower } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,11 +10,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and About */}
           <div className="space-y-4">
-            <img
-              src="https://storage.googleapis.com/msgsndr/BLeUCGmXOpptWsB7PyZu/media/67f8d2b871384b3176aef26b.png"
-              alt="Hair By Melissa"
-              className="h-16"
-            />
+            <div className="flex items-center space-x-2">
+              <Scissors className="h-10 w-10 text-salon-darkblue" />
+              <Flower className="h-8 w-8 text-salon-pink" />
+              <span className="font-serif font-bold text-xl text-white">Hair By Melissa</span>
+            </div>
             <p className="text-gray-300 mt-4">
               Elevating your hair experience with premium coloring services, keratin treatments, and expert styling.
             </p>

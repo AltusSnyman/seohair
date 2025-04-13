@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Scissors, Flower } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,11 +36,13 @@ const Navbar = () => {
     >
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <img
-            src="https://storage.googleapis.com/msgsndr/BLeUCGmXOpptWsB7PyZu/media/67f8d2b871384b3176aef26b.png"
-            alt="Hair By Melissa"
-            className="h-14"
-          />
+          <div className="flex items-center space-x-2">
+            <Scissors className={`h-10 w-10 ${scrolled ? 'text-salon-darkblue' : 'text-white'}`} />
+            <Flower className={`h-8 w-8 ${scrolled ? 'text-salon-pink' : 'text-white'}`} />
+            <span className={`font-serif font-bold text-xl ${scrolled ? 'text-gray-800' : 'text-white'}`}>
+              Hair By Melissa
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
