@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Scissors, Cut, RotateCw, Brush, Sparkles } from 'lucide-react';
+import { Scissors, Palette, RotateCw, Brush, Sparkles } from 'lucide-react';
 
 const services = [
   {
@@ -25,7 +25,7 @@ const services = [
     title: 'Hair Extensions',
     description: 'Premium quality extensions professionally applied for added length, volume, or both.',
     price: 'From $150',
-    icon: Cut
+    icon: Palette
   },
   {
     title: 'Special Occasion',
