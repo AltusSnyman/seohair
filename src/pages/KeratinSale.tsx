@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { Snowflake, MapPin, Clock } from "lucide-react";
 
@@ -164,6 +163,11 @@ const KeratinSale = () => {
           </div>
         </div>
       </section>
+      
+      {/* Hidden Meta Pixel container for additional tracking if needed */}
+      <div id="pixel-container" className="hidden">
+        {/* Meta Pixel is loaded globally via MetaPixel component */}
+      </div>
     </div>
   );
 };
