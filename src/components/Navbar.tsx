@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Scissors, Flower } from "lucide-react";
@@ -61,6 +62,9 @@ const Navbar = () => {
           <Link to="/booking" className="btn-primary">
             Book Now
           </Link>
+          <Link to="/keratin" className="btn-secondary flex items-center">
+            <Snowflake className="mr-1 h-4 w-4" /> Winter Special
+          </Link>
         </div>
 
         {/* Mobile Navigation Toggle */}
@@ -96,6 +100,13 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Book Now
+            </Link>
+            <Link
+              to="/keratin"
+              className="btn-secondary inline-block text-center"
+              onClick={() => setIsOpen(false)}
+            >
+              Winter Keratin Special
             </Link>
           </div>
         </div>
