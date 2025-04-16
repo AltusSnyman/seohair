@@ -1,6 +1,14 @@
 
 import { useEffect } from 'react';
 
+// Declare fbq as a global function on the window object
+declare global {
+  interface Window {
+    fbq: any;
+    _fbq: any;
+  }
+}
+
 const MetaPixel = () => {
   useEffect(() => {
     // Add Meta Pixel script
