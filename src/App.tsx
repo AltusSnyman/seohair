@@ -14,6 +14,7 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import Booking from "./pages/Booking";
+import ThankYou from "./pages/ThankYou";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
@@ -38,6 +39,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/booking" element={<Booking />} />
+            <Route path="/thankyou" element={<ThankYou />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/keratin" element={<KeratinSale />} />
