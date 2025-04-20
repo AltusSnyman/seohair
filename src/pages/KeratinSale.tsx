@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Snowflake, MapPin, Clock } from "lucide-react";
+import CountdownTimer from "../components/CountdownTimer";
 
 const KeratinSale = () => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
@@ -94,11 +95,17 @@ const KeratinSale = () => {
         <div className="container-custom">
           <div className="max-w-2xl mx-auto">
             <div className="bg-purple-50 p-6 rounded-lg shadow-md">
-              <h2 className="text-3xl font-serif font-bold text-center mb-6">
-                Book Your Keratin Treatment Now
+              <h2 className="text-3xl font-serif font-bold text-center mb-4">
+                Get Your Discount Code Now
               </h2>
-              <p className="text-center mb-8 text-lg">
-                <span className="font-bold">Act fast!</span> This special $20 discount is only available for a limited time.
+              <div className="flex justify-center mb-4">
+                <CountdownTimer />
+              </div>
+              <p className="text-center mb-6 text-lg">
+                Fill in your details in the next 2 minutes and we'll give you access to the exclusive discounted booking page.
+              </p>
+              <p className="text-center mb-8 text-lg font-semibold">
+                Why spend $201 when you can only spend $179?
               </p>
               
               <div className="form-container h-[450px]">
